@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mattia D'Ambrosio — Marketing e pubblicità online per la tua attività</title>
+<meta name="description" content="Aiuto studi, professionisti, ristoranti e attività a farsi trovare online e ad avere più clienti, con sito, Google, social e pubblicità. Marketing online a Salerno e da remoto.">
+
+<meta property="og:title" content="Mattia D'Ambrosio — Marketing e pubblicità online per la tua attività">
+<meta property="og:description" content="Faccio crescere le attività online: più clienti da sito, Google, social e pubblicità.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Schibsted+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#0c0b0a;
+    --bg-soft:#15120f;
+    --line:rgba(255,255,255,0.08);
+    --line-2:rgba(255,255,255,0.15);
+    --text:#efece7;
+    --muted:#a09a92;
+    --muted-2:#726c64;
+    --accent:#e0a86a;
+    --accent-2:#eebd84;
+    --accent-deep:#1c1206;
+
+    --display:"Schibsted Grotesk",-apple-system,BlinkMacSystemFont,sans-serif;
+    --body:"Hanken Grotesk",-apple-system,BlinkMacSystemFont,sans-serif;
+    --ease:cubic-bezier(.22,.61,.36,1);
+    --max:1120px;
+    --px:clamp(1.4rem,4vw,3rem);
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} *{transition:none !important;animation:none !important} }
+
+  body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);font-size:clamp(1rem,0.97rem + 0.15vw,1.08rem);line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.04;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:var(--accent);color:var(--accent-deep)}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+
+  .kicker{font-weight:600;font-size:0.76rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent-2);display:inline-flex;align-items:center;gap:0.55rem}
+  .kicker::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent)}
+  h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-0.02em;line-height:1.08;margin:0}
+
+  .btn{display:inline-flex;align-items:center;gap:0.5rem;font-family:var(--body);font-weight:600;font-size:0.95rem;padding:0.7rem 1.2rem;border-radius:10px;border:1px solid transparent;cursor:pointer;transition:transform .2s var(--ease),background .2s var(--ease),border-color .2s var(--ease),color .2s var(--ease)}
+  .btn-accent{background:var(--accent);color:var(--accent-deep)}
+  .btn-accent:hover{transform:translateY(-2px);background:var(--accent-2)}
+  .btn-ghost{border-color:var(--line-2);color:var(--text)}
+  .btn-ghost:hover{border-color:var(--text);background:var(--bg-soft)}
+  .btn-sm{padding:0.5rem 1rem;font-size:0.9rem}
+
+  .ph{position:relative;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:radial-gradient(120% 120% at 30% 15%, #221a12, #0c0b0a 72%);display:grid;place-items:center;color:var(--muted-2)}
+  .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .ph .lab{text-align:center;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.1em;line-height:1.5;padding:1rem}
+  .ph .lab svg{width:26px;height:26px;margin:0 auto 0.5rem;display:block;stroke:var(--muted-2)}
+
+  /* ===================== HEADER IN ALTO ===================== */
+  header.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 78%,transparent);backdrop-filter:saturate(140%) blur(12px);-webkit-backdrop-filter:saturate(140%) blur(12px);border-bottom:1px solid var(--line)}
+  .top-inner{max-width:var(--max);margin-inline:auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:0.85rem var(--px)}
+  .brand{font-family:var(--display);font-weight:700;font-size:1.12rem;letter-spacing:-0.01em}
+  .brand b{color:var(--accent);font-weight:700}
+  .menu{display:flex;align-items:center;gap:0.35rem}
+  .menu .links{display:flex;gap:0.15rem;margin-right:0.6rem}
+  .menu .links a{color:var(--muted);font-size:0.93rem;font-weight:500;padding:0.45rem 0.75rem;border-radius:8px;transition:color .2s var(--ease),background .2s var(--ease)}
+  .menu .links a:hover{color:var(--text);background:var(--bg-soft)}
+  @media(max-width:760px){ .menu .links{display:none} }
+
+  /* ===================== MAIN CENTRATO ===================== */
+  .main{position:relative;z-index:1;max-width:var(--max);margin-inline:auto}
+  .s{padding:clamp(2.8rem,5vw,4.4rem) var(--px);border-bottom:1px solid var(--line);scroll-margin-top:4.5rem}
+  .s-head{display:grid;grid-template-columns:auto 1fr;gap:1.3rem;margin-bottom:2.4rem;align-items:start}
+  .s-num{font-family:var(--display);font-weight:800;font-size:clamp(2.2rem,1.6rem + 2.6vw,3.6rem);line-height:0.8;color:transparent;-webkit-text-stroke:1px var(--accent);opacity:.5}
+  .s-intro{max-width:58ch}
+  .s-intro h2{font-size:clamp(1.5rem,1.2rem + 1.2vw,2.15rem);margin-top:0.7rem}
+  .s-intro p{margin:0.7rem 0 0;color:var(--muted);font-size:1.05rem}
+
+  /* ---- HERO ---- */
+  .hero{position:relative;overflow:hidden;padding:clamp(2.8rem,6vw,5rem) var(--px);border-bottom:1px solid var(--line)}
+  .hero::before{content:"";position:absolute;top:-15%;right:0;width:58%;height:130%;pointer-events:none;
+    background:radial-gradient(closest-side, color-mix(in srgb,var(--accent) 20%, transparent), transparent);opacity:.6}
+  .hero-grid{position:relative;display:grid;grid-template-columns:1.4fr 0.85fr;gap:clamp(1.8rem,4vw,3.4rem);align-items:center}
+  @media(max-width:860px){ .hero-grid{grid-template-columns:1fr;gap:2.4rem} }
+  .hero h1{font-size:clamp(2rem,1.5rem + 2.2vw,3.3rem);margin:1.3rem 0 0;max-width:17ch}
+  .hero h1 .soft{color:var(--accent-2)}
+  .hero .lead{margin:1.4rem 0 0;color:var(--muted);font-size:clamp(1.05rem,1rem + 0.4vw,1.2rem);max-width:50ch}
+  .hero .cta{display:flex;flex-wrap:wrap;gap:0.7rem;margin-top:1.9rem}
+  .hero-stats{display:flex;flex-wrap:wrap;gap:1.2rem 2.4rem;margin-top:2.2rem;padding-top:1.7rem;border-top:1px solid var(--line)}
+  .hero-stat b{font-family:var(--display);font-weight:800;font-size:1.4rem;display:block;line-height:1}
+  .hero-stat span{color:var(--muted);font-size:0.82rem}
+  .hero-figure{position:relative;max-width:340px;margin-inline:auto;width:100%}
+  .hero-figure .ph{aspect-ratio:4/5;width:100%}
+  .hero-badge{position:absolute;left:-0.7rem;bottom:1.1rem;display:flex;align-items:center;gap:0.55rem;
+    background:var(--bg-soft);border:1px solid var(--line-2);border-radius:12px;padding:0.6rem 0.9rem;font-size:0.82rem;font-weight:500;
+    box-shadow:0 14px 34px rgba(0,0,0,.45)}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 22%,transparent)}
+
+  /* ---- PER CHI ---- */
+  .forwho{display:flex;flex-wrap:wrap;gap:0.6rem;align-items:center;padding:1.4rem var(--px);border-bottom:1px solid var(--line);background:var(--bg-soft)}
+  .forwho .lbl{color:var(--muted);font-size:0.86rem;margin-right:0.6rem}
+  .forwho .chip{font-size:0.88rem;color:var(--text);border:1px solid var(--line-2);border-radius:999px;padding:0.4rem 0.85rem}
+
+  /* ---- SERVIZI ---- */
+  .srv{display:grid;grid-template-columns:auto 1fr;gap:1.2rem;padding:1.7rem 0;border-top:1px solid var(--line)}
+  .srv:first-of-type{border-top:0}
+  .srv .sn{font-family:var(--display);font-weight:800;color:var(--accent);font-size:1.1rem}
+  .srv h3{font-size:1.35rem}
+  .srv .d{margin:0.5rem 0 0;color:var(--muted);font-size:0.99rem;max-width:60ch}
+  .srv .tags{display:flex;flex-wrap:wrap;gap:0.45rem;margin-top:0.9rem}
+  .srv .tags span{font-size:0.8rem;color:var(--text);background:var(--bg-soft);border:1px solid var(--line);padding:0.32rem 0.62rem;border-radius:999px}
+  .tools{margin-top:1.8rem;color:var(--muted-2);font-size:0.86rem;line-height:1.5}
+  @media(max-width:560px){ .srv{grid-template-columns:1fr;gap:0.3rem} }
+
+  /* ---- LAVORI ---- */
+  .works{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
+  @media(max-width:900px){ .works{grid-template-columns:1fr} }
+  .work{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--bg-soft);transition:border-color .25s var(--ease),transform .25s var(--ease)}
+  .work:hover{border-color:var(--line-2);transform:translateY(-3px)}
+  .work .ph{border:0;border-bottom:1px solid var(--line);border-radius:0;aspect-ratio:16/10}
+  .work .body{padding:1.3rem 1.4rem}
+  .work .tag{font-size:0.74rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted-2);font-weight:600}
+  .work h3{font-size:1.18rem;margin:0.4rem 0}
+  .work .ctx{margin:0 0 1rem;color:var(--muted);font-size:0.93rem}
+  .work .res{font-family:var(--display);font-weight:800;color:var(--accent);font-size:1.5rem;line-height:1}
+  .work .res small{display:block;font-family:var(--body);font-weight:500;font-size:0.82rem;color:var(--muted);margin-top:0.3rem;letter-spacing:0}
+
+  /* ---- TESTIMONIANZA + CTA ---- */
+  .quote{font-family:var(--display);font-weight:600;font-size:clamp(1.4rem,1.1rem + 1.6vw,2.1rem);line-height:1.3;letter-spacing:-0.01em;max-width:26ch}
+  .quote .mk{color:var(--accent)}
+  .by{margin-top:1.4rem;color:var(--muted);font-size:0.95rem}
+  .by b{color:var(--text);font-weight:600}
+  .cta-band{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;margin-top:2.4rem;padding:1.5rem 1.7rem;border:1px solid var(--line);border-radius:14px;background:var(--bg-soft)}
+  .cta-band p{margin:0;font-family:var(--display);font-weight:600;font-size:1.15rem}
+
+  /* ---- CHI SONO ---- */
+  .about-grid{display:grid;grid-template-columns:0.8fr 1.2fr;gap:clamp(1.6rem,4vw,3rem);align-items:center}
+  @media(max-width:820px){ .about-grid{grid-template-columns:1fr} }
+  .about .ph{aspect-ratio:1;max-width:330px}
+  .about p{color:var(--muted);font-size:1.05rem;margin:0 0 1rem;max-width:54ch}
+  .about p.first{color:var(--text)}
+
+  /* ---- APPROCCIO (blocco ambra) ---- */
+  .appr{background:var(--accent);color:var(--accent-deep)}
+  .appr .kicker{color:#6a4a12}
+  .appr .kicker::before{background:var(--accent-deep)}
+  .appr .s-num{-webkit-text-stroke-color:var(--accent-deep);opacity:.35}
+  .appr h2{color:var(--accent-deep)}
+  .appr-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(28,18,6,.18);border:1px solid rgba(28,18,6,.18);border-radius:14px;overflow:hidden}
+  .appr-grid .a{background:var(--accent);padding:1.6rem 1.5rem}
+  .appr-grid .ai{font-family:var(--display);font-weight:800;font-size:0.9rem;opacity:.55;display:block;margin-bottom:0.7rem}
+  .appr-grid h3{color:var(--accent-deep);font-size:1.18rem;margin-bottom:0.45rem}
+  .appr-grid p{margin:0;color:#46300f;font-size:0.96rem;line-height:1.55}
+  @media(max-width:620px){ .appr-grid{grid-template-columns:1fr} }
+
+  /* ---- CONSIGLI ---- */
+  .post{display:grid;grid-template-columns:7.5rem 1fr 1.6rem;gap:1.3rem;align-items:baseline;padding:1.2rem 0;border-top:1px solid var(--line);transition:color .2s var(--ease)}
+  .post:last-child{border-bottom:1px solid var(--line)}
+  .post .dt{color:var(--muted-2);font-size:0.84rem;font-weight:500}
+  .post h3{font-size:1.1rem;font-weight:600;transition:color .2s var(--ease)}
+  .post:hover h3{color:var(--accent)}
+  .post .ar{color:var(--muted);text-align:right;transition:transform .2s var(--ease)}
+  .post:hover .ar{transform:translateX(4px);color:var(--accent)}
+  @media(max-width:560px){ .post{grid-template-columns:1fr;gap:0.25rem} .post .ar{display:none} }
+
+  /* ---- CONTATTO ---- */
+  .contact h2{font-size:clamp(1.7rem,1.3rem + 1.8vw,2.6rem);max-width:18ch;margin-top:0.9rem}
+  .contact p{color:var(--muted);max-width:50ch;margin:1.1rem 0 1.9rem;font-size:1.08rem}
+  .mail{display:inline-flex;align-items:center;gap:0.6rem;font-family:var(--display);font-weight:700;font-size:clamp(1.15rem,1rem + 1.4vw,1.9rem);color:var(--text);border-bottom:2px solid var(--accent);padding-bottom:3px;transition:color .2s var(--ease)}
+  .mail:hover{color:var(--accent)}
+  .contact .meta{display:flex;flex-wrap:wrap;gap:0.7rem 2rem;margin-top:2rem;color:var(--muted);font-size:0.92rem}
+  .contact .meta a{color:var(--text);border-bottom:1px solid var(--line-2);padding-bottom:1px}
+  .contact .meta a:hover{border-color:var(--accent);color:var(--accent)}
+
+  footer{max-width:var(--max);margin-inline:auto;padding:1.6rem var(--px);display:flex;flex-wrap:wrap;justify-content:space-between;gap:0.8rem;color:var(--muted-2);font-size:0.86rem}
+  footer a{color:var(--muted)}
+  footer a:hover{color:var(--text)}
+</style>
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="top">
+  <div class="top-inner">
+    <a class="brand" href="#">Mattia D'<b>Ambrosio</b></a>
+    <nav class="menu" aria-label="Principale">
+      <span class="links">
+        <a href="#servizi">Cosa faccio</a>
+        <a href="#chi">Chi sono</a>
+        <a href="#consigli">Consigli</a>
+      </span>
+      <a class="btn btn-accent btn-sm" href="#contatto">Scrivimi</a>
+    </nav>
+  </div>
+</header>
+
+<main class="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid">
+      <div>
+        <span class="kicker">Marketing e pubblicità online</span>
+        <h1>Bravo nel tuo mestiere, <span class="soft">invisibile online.</span></h1>
+        <p class="lead">C'è chi cucina benissimo, chi cura i pazienti meglio di tutti, chi ha il negozio più fornito della zona. E su internet non se ne accorge nessuno. Del digitale me ne occupo io: sito, Google, social, pubblicità. Tu continui a fare quello che sai fare.</p>
+        <div class="cta">
+          <a class="btn btn-accent" href="#contatto">Raccontami il progetto <span aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="#servizi">Cosa faccio per te</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><b>Dal 2020</b><span>nel marketing online</span></div>
+          <div class="hero-stat"><b>Tanti settori</b><span>studi, ristoranti, negozi, eventi</span></div>
+          <div class="hero-stat"><b>Salerno · remoto</b><span>in tutta Italia</span></div>
+        </div>
+      </div>
+      <!-- FOTO: il tuo ritratto in assets/ritratto.jpg (verticale). Togli il commento all'<img>. -->
+      <figure class="hero-figure">
+        <div class="ph">
+          <img src="assets/ritratto.webp" alt="Mattia D'Ambrosio" width="720" height="900">
+        </div>
+        <div class="hero-badge"><span class="dot"></span> Disponibile ora</div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- PER CHI -->
+  <div class="forwho">
+    <span class="lbl">Lavoro con:</span>
+    <span class="chip">Studi medici e dentistici</span>
+    <span class="chip">Commercialisti e notai</span>
+    <span class="chip">Ristoranti e bar</span>
+    <span class="chip">Negozi e attività locali</span>
+    <span class="chip">Strutture ricettive ed eventi</span>
+  </div>
+
+  <!-- SERVIZI -->
+  <section class="s" id="servizi">
+    <header class="s-head">
+      <span class="s-num">01</span>
+      <div class="s-intro">
+        <span class="kicker">Cosa faccio per te</span>
+        <h2>Come porto più clienti alla tua attività.</h2>
+        <p>Un sito fatto bene, le parole giuste per convincere, la pubblicità per farti trovare e i numeri sotto controllo. Quattro pezzi che portano clienti solo se lavorano insieme.</p>
+      </div>
+    </header>
+
+    <div class="srv">
+      <span class="sn">01</span>
+      <div>
+        <h3>Darti un sito fatto bene</h3>
+        <p class="d">Un sito vetrina di alta qualità, veloce e curato, che fa subito una buona impressione e spinge chi lo apre a chiamarti, scriverti o prenotare. Niente template tristi uguali a mille altri.</p>
+        <div class="tags"><span>Sito vetrina</span><span>Pagine di vendita</span><span>Veloce e curato</span><span>Da telefono</span></div>
+      </div>
+    </div>
+    <div class="srv">
+      <span class="sn">02</span>
+      <div>
+        <h3>Farti scegliere</h3>
+        <p class="d">Le parole giuste sul sito, nelle email e negli annunci, perché chi ti trova scelga te invece del concorrente. Anni passati a scrivere per vendere, sul mercato italiano.</p>
+        <div class="tags"><span>Testi che vendono</span><span>Email</span><span>Annunci</span></div>
+      </div>
+    </div>
+    <div class="srv">
+      <span class="sn">03</span>
+      <div>
+        <h3>Farti trovare</h3>
+        <p class="d">Pubblicità su Google e sui social che ti porta richieste, prenotazioni e clienti, senza buttare soldi. Tengo le spese sotto controllo e punto al ritorno.</p>
+        <div class="tags"><span>Google</span><span>Facebook e Instagram</span><span>YouTube</span><span>Pubblicità locale</span></div>
+      </div>
+    </div>
+    <div class="srv">
+      <span class="sn">04</span>
+      <div>
+        <h3>Capire cosa funziona</h3>
+        <p class="d">Ti dico con chiarezza cosa ti sta portando clienti e cosa sta solo costando, così investi dove rende davvero. Niente più decisioni a caso.</p>
+        <div class="tags"><span>Report chiari</span><span>Spese sotto controllo</span><span>Privacy a norma</span></div>
+      </div>
+    </div>
+    <p class="tools">Dietro le quinte uso gli strumenti professionali del mestiere (Meta Ads, Google Ads, GA4, tag server-side) per misurare ogni euro che spendi.</p>
+  </section>
+
+  <!-- PROMESSA + CTA -->
+  <section class="s">
+    <span class="kicker">In due parole</span>
+    <blockquote class="quote" style="margin:1.2rem 0 0">
+      Il tuo lavoro lo sai fare meglio di chiunque. Quello che spesso manca è far arrivare la tua attività alle persone giuste, online, <span class="mk">mentre tu pensi al resto.</span> Quel pezzo lo metto io.
+    </blockquote>
+    <p class="by">Più clienti e più fatturato non arrivano da soli: arrivano quando chi ti cerca ti trova, ti capisce e sceglie te. È lì che lavoro.</p>
+
+    <div class="cta-band">
+      <p>Vuoi sistemare anche tu la parte online?</p>
+      <a class="btn btn-accent" href="#contatto">Parliamone <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <!-- CHI SONO -->
+  <section class="s about" id="chi">
+    <div class="about-grid">
+      <!-- FOTO: una tua foto al lavoro o un secondo ritratto in assets/about.jpg -->
+      <div class="ph"><!-- <img src="assets/about.jpg" alt="Mattia D'Ambrosio"> --><span class="lab"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="9" r="3.2"/><path d="M5 19c1.2-3 3.8-4.5 7-4.5s5.8 1.5 7 4.5"/></svg>Una tua foto</span></div>
+      <div>
+        <span class="kicker">Chi sono</span>
+        <h2 style="margin-top:0.7rem">Dietro c'è una persona sola: io.</h2>
+        <p class="first" style="margin-top:1.2rem">Sono Mattia. Vengo dalla fisioterapia e dal 2020 lavoro nel marketing e nell'online, un po' per curiosità, un po' perché mi piace smontare i problemi finché non trovo la soluzione.</p>
+        <p>Mi occupo soprattutto di marketing a risposta diretta e copywriting, cioè di far arrivare il messaggio giusto alle persone giuste e portarle ad agire. Per anni ho gestito un'importante società che del marketing aveva fatto la sua ragione d'essere, e oggi quel mestiere lo metto al servizio delle attività che vogliono crescere online.</p>
+        <p>Non mi spaccio per un guru e non ti prometto la luna. Faccio una cosa e la faccio bene: ti tolgo il peso del digitale dalle spalle e lo trasformo in clienti. Gli strumenti per crescere oggi ci sono tutti, spesso manca solo qualcuno che li sappia usare al posto tuo mentre tu mandi avanti il lavoro.</p>
+        <p>Lavoro con poche attività per volta, parli sempre con me, e ti dico le cose come stanno, anche quando ti conviene non spendere.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROCCIO -->
+  <section class="s appr">
+    <header class="s-head">
+      <span class="s-num">·</span>
+      <div class="s-intro">
+        <span class="kicker">Come lavoro</span>
+        <h2>Pochi clienti, seguiti bene.</h2>
+      </div>
+    </header>
+    <div class="appr-grid">
+      <div class="a"><span class="ai">A</span><h3>Guardo i risultati</h3><p>Le scelte nascono da quello che funziona davvero. Se una cosa non rende, la cambio.</p></div>
+      <div class="a"><span class="ai">B</span><h3>Niente fuffa</h3><p>Ti dico chiaro cosa può funzionare e cosa no. Meglio perdere un lavoro che promettere il falso.</p></div>
+      <div class="a"><span class="ai">C</span><h3>Tutto collegato</h3><p>Sito, pubblicità e contenuti lavorano insieme, così ogni pezzo aiuta gli altri a portarti clienti.</p></div>
+      <div class="a"><span class="ai">D</span><h3>Ti tolgo il pensiero</h3><p>Me ne occupo io e ti aggiorno con parole semplici. Tu continui a mandare avanti la tua attività.</p></div>
+    </div>
+  </section>
+
+  <!-- CONSIGLI -->
+  <section class="s" id="consigli">
+    <header class="s-head">
+      <span class="s-num">02</span>
+      <div class="s-intro">
+        <span class="kicker">Consigli utili</span>
+        <h2>Idee pratiche per la tua attività.</h2>
+        <p>Spiego in parole semplici come farti trovare online e ottenere più clienti. Senza giri di parole tecniche.</p>
+      </div>
+    </header>
+    <a class="post" href="#"><span class="dt">28 mag 2026</span><h3>Come farti trovare su Google quando un cliente cerca nella tua zona</h3><span class="ar" aria-hidden="true">→</span></a>
+    <a class="post" href="#"><span class="dt">14 mag 2026</span><h3>Quanto conviene investire in pubblicità per partire</h3><span class="ar" aria-hidden="true">→</span></a>
+    <a class="post" href="#"><span class="dt">30 apr 2026</span><h3>Perché a volte la pubblicità non porta subito risultati</h3><span class="ar" aria-hidden="true">→</span></a>
+    <a class="post" href="#"><span class="dt">16 apr 2026</span><h3>Sito o pagina Facebook: da dove conviene partire</h3><span class="ar" aria-hidden="true">→</span></a>
+    <a class="post" href="#"><span class="dt">2 apr 2026</span><h3>Le tre cose da sistemare prima di spendere in pubblicità</h3><span class="ar" aria-hidden="true">→</span></a>
+  </section>
+
+  <!-- CONTATTO -->
+  <section class="s contact" id="contatto">
+    <span class="kicker">Parliamo</span>
+    <h2>Vuoi far crescere la tua attività online?</h2>
+    <p>Scrivimi due righe sulla tua attività e su cosa vorresti migliorare. Ti rispondo se penso di poterti dare una mano, e te lo dico chiaro anche quando non è il caso.</p>
+    <a class="mail" href="mailto:info@mattiadambrosio.com?subject=La%20mia%20attività%20-%20parliamone">info@mattiadambrosio.com</a>
+    <div class="meta">
+      <span>Risposta in 1-2 giorni lavorativi</span>
+      <a href="#">LinkedIn ↗</a>
+      <a href="#">Substack ↗</a>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 Mattia D'Ambrosio — P. IVA da inserire</span>
+    <span><a href="#servizi">Cosa faccio</a> · <a href="#chi">Chi sono</a> · <a href="#contatto">Contatti</a></span>
+  </footer>
+
+</main>
+
+</body>
+</html>
